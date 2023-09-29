@@ -55,13 +55,11 @@ function Model({ ...props }) {
 function App() {
   const [soul, setSoul] = useState(localStorage.getItem("soul") || "#ffffff");
   const [mesh, setMesh] = useState(localStorage.getItem("mesh") || "#ffffff");
-  const [stripes, setStripes] = useState(localStorage.getItem("stripes") || "#ffffff");
 
   useEffect(() => {
     setSoul(localStorage.getItem("soul"));
     setMesh(localStorage.getItem("mesh"));
-    setStripes(localStorage.getItem("stripes"));
-  }, [soul, mesh, stripes]);
+  }, [soul, mesh]);
 
   return (
     <div className="App">
