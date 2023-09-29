@@ -107,19 +107,6 @@ function App() {
             <div>
               <input
                 type="color"
-                id="stripes"
-                name="stripes"
-                value={stripes}
-                onChange={(e) => {
-                  setStripes(e.target.value);
-                  localStorage.setItem("stripes", e.target.value);
-                }}
-              />
-              <label for="stripes">Stripes</label>
-            </div>
-            <div>
-              <input
-                type="color"
                 id="soul"
                 name="soul"
                 value={soul}
